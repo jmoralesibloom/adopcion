@@ -1,0 +1,39 @@
+/*!
+ * Start Bootstrap - Portfolio Item HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+.redesSociales:first-child  li:nth-child(1) a{
+	background-image: url("iconsSocial.jpg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 32px;
+  float: left;
+  text-indent: -999px;
+  overflow: hidden;
+}
+.redesSociales:first-child li:nth-child(2) a {
+	background-image: url("iconsSocial.jpg");
+  background-repeat: no-repeat;
+ background-position: -41px 0;
+  width: 35px;
+  height: 32px;
+  float: left;
+  text-indent: -999px;
+  overflow: hidden;
+}
+.espacios li{
+	margin:1em 0; 
+}
+
+footer {
+    margin: 50px 0;
+}

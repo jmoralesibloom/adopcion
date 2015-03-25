@@ -1,0 +1,772 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/3-col-portfolio.css" rel="stylesheet">
+		<link href="css/portfolio-item.css" rel="stylesheet">
+		<link rel=stylesheet href="css/mainKota.css" type="text/css">
+
+
+		<script type="text/javascript" src="/general.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	</head>
+	<body>
+		<header>
+			<!--Enlaces y ayudas al comprador-->
+        <div class="ayudasComprador">
+			<div class="wraper">
+				<ul class="atencionTelefonica">
+					<li class="tituloAtencion">
+						Atención telefónica 
+					</li>
+					<li>
+						Interior: 01800-910-5682
+					</li>
+					<li>
+						D.F. (55) 2167-3010
+					</li>	
+				</ul>
+				<ul class="otrasAyudas">
+					<!-- <li class="chat">
+						<a hre="#">Habla con un especialista</a>
+					</li> -->
+					<li class="ayuda">
+						<a hre="#">Ayuda</a>
+						<ul>
+							<li>
+								<a href="#">Pagos y envíos</a>
+							</li>
+							<li>
+								<a href="#">Garantías y devoluciones</a>
+							</li>
+							<li>
+								<a href="#">Términos y condiciones</a>
+							</li>	
+						</ul>	
+					</li>
+					<li class="servicios">
+						<a hre="#">Servicios</a>
+						<ul>
+							<li>
+								<a href="#">Adopciones</a>
+							</li>
+							<li>
+								<a href="#">Servicio a domicilio</a>
+							</li>
+							<li>
+								<a href="#">Estétika Kanina +KOTA</a>
+							</li>
+							<li>
+								<a href="#">Red de veterinarios</a>
+							</li>
+							<li>
+								<a href="#">Entrenamientos / Hotel para perros</a>
+							</li>	
+						</ul>	
+					</li>
+					<li class="tiendas">
+						<a hre="#">Nuestras tiendas</a>
+					</li>	
+				</ul>
+				<div class="clear"></div>	
+			</div>
+		</div>
+		<!--/Enlaces y ayudas al comprador-->
+		
+		<!--Logotipo, buscador, mi cuenta y carrito-->
+		<div class="encabezado">
+			<div class="wraper">
+				<h1>
+					<a href="/">+ KOTA</a>
+				</h1>
+				<div class="buscador">
+				    <!--Controlador del buscador-->
+				    <vtex.cmc:fullTextSearchBox/>
+				    <!--/Controlador del Buscador-->
+				</div>
+				<div class="menuFijoEncabezado">
+				    <span class="iconMenu">Menú</span>
+				</div>
+				<ul class="tuCuenta">
+					<li class="cuenta">
+						Tu cuenta
+						<ul class="itemsCuenta">
+							<li class="btnIniciar">
+								<a href="/account">Iniciar Sesión</a>
+							</li>
+							<li>
+								<span>¿No tienes cuenta?</span>
+								<span><a href="/login">Clic aquí</a></span>
+							</li>
+							<li>
+								<a href="/account/orders">Historial de ordenes</a>
+							</li>
+							<li>
+								<a href="/giftlist">Lista de deseos</a>
+							</li>
+							<li>
+								<a href="/logout">Salir</a>
+							</li>
+							<li>
+								Tarjeta Más +KOTA
+							</li>
+							<li class="itemTarjeta">
+								<a href="#">Consulta de saldo</a>
+							</li>
+							<li class="itemTarjeta">
+								<a href="#">Renovación de tarjeta</a>
+							</li>	
+						</ul>	
+					</li>	
+				</ul>
+				
+				<div class="carritoCompras">
+				    <div class="infoCarrito">
+				        <a href="/checkout">
+				            <vtex.cmc:AmountItemsInCart/>
+                        </a>
+				    </div>
+				    <div class="resumenCarrito">
+				        <vtex.cmc:miniCart />
+				    </div>    
+				</div>	
+				
+				<div class="clear"></div>	
+			</div>
+		</div>
+		<!--/Logotipo, buscador, mi cuenta y carrito-->
+
+		<div class="menuPrincipal">
+			<div class="wraper">
+				<ul>
+					<li>
+						<a href="#">Adopta | +AMOR</a>
+						<!-- <ul class="subMenuCorto">
+							<li>
+								<a href="#">Adopciones</a>
+							</li>
+							<li>
+								<a href="#">Qué es +Amor?</a>
+							</li>
+							<li>
+								<a href="#">Historias felices</a>
+							</li>
+							<li>
+								<a href="#">Actividades y eventos</a>	
+							</li>
+							<li>
+								<a href="#">Fundaciones y asociaciones</a>	
+							</li>	
+						</ul> -->	
+					</li>
+					<li>
+						<a href="#">Cuidados</a>
+						<!-- <ul class="subMenuCorto">
+							<li>
+								<a href="#">Tips y guías de cuidado</a>
+							</li>
+							<li>
+								<a href="#">Catálogo de especies</a>
+							</li>
+							<li>
+								<a href="#">Red de veterinarios</a>
+							</li>	
+						</ul> -->
+					</li>
+					<li>
+						<a href="#">Perros</a>
+<!-- 						<ul class="submenuLargo">
+							<li>
+								<a href="#">Alimentos y premios</a>
+								<ul>
+									<li>
+										<a href="#">Alimentos secos</a>
+									</li>
+									<li>
+										<a href="#">Alimentos humedos -Latas y Pouches-</a>
+									</li>
+									<li>
+										<a href="#">Natural | Orgánico | Holistico</a>
+									</li>
+									<li>
+										<a href="#">Premios - Carnazas</a>
+									</li>	
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Accesorios</a>
+								<ul>
+									<li>
+										<a href="#">Camas y tapetes</a>
+									</li>
+									<li>
+										<a href="#">Ropa</a>
+									</li>
+									<li>
+										<a href="#">Comederos y bebederos</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Entrenamiento y limpieza hogar</a>
+								<ul>
+									<li>
+										<a href="#">Tapete entrenador y pads</a>
+									</li>
+									<li>
+										<a href="#">Limpiadores de hogar</a>
+									</li>
+									<li>
+										<a href="#">Atrayentes y repelentes</a>
+									</li>
+									<li>
+										<a href="#">Clicker, silbato</a>
+									</li>	
+								</ul>
+							</li>
+							
+							<li>
+								<a href="#">Cuidados</a>
+								<ul>
+									<li>
+										<a href="#">Tips y guías de cuidado</a>
+									</li>
+									<li>
+										<a href="#">Catálogo de especies</a>
+									</li>
+									<li>
+										<a href="#">Atrayentes y repelentes</a>
+									</li>
+									<li>
+										<a href="#">Clicker, Silbato</a>
+									</li>	
+								</ul>
+							</li>
+							
+							<li>
+								<a href="#">Accesorios de paseo</a>
+								<ul>
+									<li>
+										<a href="#">Correas</a>
+									</li>
+									<li>
+										<a href="#">Pecheras</a>
+									</li>
+									<li>
+										<a href="#">Bozales</a>
+									</li>
+									<li>
+										<a href="#">Collares</a>
+									</li>
+									<li>
+										<a href="#">Articulos de paseo</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Juguetes</a>
+								<ul>
+    								<li>
+    									<a href="#">Juguetes</a>
+    								</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Salud</a>
+								<ul>
+									<li>
+										<a href="#">Antipulgas</a>
+									</li>
+									<li>
+										<a href="#">Medicamentos</a>
+									</li>
+									<li>
+										<a href="#">Cuidado dental</a>
+									</li>
+									<li>
+										<a href="#">Suplementos alimenticios y vitáminicos</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Estética e higiene</a>
+								<ul>
+									<li>
+										<a href="#">Shampoos y acondicionadores</a>
+									</li>
+									<li>
+										<a href="#">Cepillos</a>
+									</li>
+									<li>
+										<a href="#">Cortauñas</a>
+									</li>
+									<li>
+										<a href="#">Máquinas de corte</a>
+									</li>
+									<li>
+										<a href="#">Lociones y colonia</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Habitats / Casas /  Transportadoras </a>
+								<ul>
+									<li>
+										<a href="#">Casas</a>
+									</li>
+									<li>
+										<a href="#">Transportadoras y bolsas de viaje</a>
+									</li>
+									<li>
+										<a href="#">Puertas, corrales y escaleras</a>
+									</li>	
+								</ul>
+							</li>	
+						</ul>	 -->
+					</li>
+					<li>
+						<a href="#">Gatos</a>
+<!-- 						<ul class="submenuLargo">
+							<li>
+								<a href="#">Alimentos y premios</a>
+								<ul>
+									<li>
+										<a href="#">Alimentos secos</a>
+									</li>
+									<li>
+										<a href="#">Alimentos humedos - Latas y Pouches -</a>
+									</li>
+									<li>
+										<a href="#">Natural | Orgánico | Holistico</a>
+									</li>
+									<li>
+										<a href="#">Premios - catnip</a>
+									</li>
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Juguetes</a>
+								<ul>
+									<li>
+										<a href="#">Rascadores</a>
+									</li>
+									<li>
+										<a href="#">Juguetes</a>
+									</li>	
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Salud</a>
+								<ul>
+									<li>
+										<a href="#">Antipulgas</a>
+									</li>
+									<li>
+										<a href="#">Suplementos alimenticios y vitáminicos</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Accesorios</a>
+								<ul>
+									<li>
+										<a href="#">Collares</a>
+									</li>
+									<li>
+										<a href="#">Camas y tapetes</a>
+									</li>
+									<li>
+										<a href="#">Comederos y bebederos</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Estética e higiene</a>
+								<ul>
+									<li>
+										<a href="#">Cepillos</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Limpieza hogar</a>
+								<ul>
+									<li>
+										<a href="#">Arena para gato</a>
+									</li>
+									<li>
+										<a href="#">Limpiadores de hogar</a>
+									</li>
+									<li>
+										<a href="#">Areneros</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Habitats / Casas / Transportadoras</a>
+								<ul>
+									<li>
+										<a href="#">Casas</a>
+									</li>
+									<li>
+										<a href="#">Transportadoras y bolsas de viaje</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Cuidados</a>
+								<ul>
+									<li>
+										<a href="#">Tips y guias de cuidado</a>
+									</li>
+									<li>
+										<a href="#">Catálogo de especies</a>
+									</li>
+									<li>
+										<a href="#">Red de veterinarios</a>
+									</li>	
+								</ul>
+							</li>	
+						</ul> -->	
+					</li>
+					<li>
+						<a href="#">Aves</a>
+<!-- 						<ul class="submenuLargo">
+							<li>
+								<a href="#">Alimento</a>
+								<ul>
+									<li>
+										<a href="#">Alimento</a>
+									</li>
+									<li>
+										<a href="#">Premios</a>
+									</li>
+									<li>
+										<a href="#">Néctar</a>
+									</li>	
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Salud</a>
+								<ul>
+									<li>
+										<a href="#">Suplementos alimenticios</a>
+									</li>
+									<li>
+										<a href="#">Vitaminas</a>
+									</li>	
+								</ul>
+							</li>
+							<li>
+								<a href="#">Habitats y accesorios</a>
+								<ul>
+									<li>
+										<a href="#">Jaulas</a>
+									</li>
+									<li>
+										<a href="#">Nidos</a>
+									</li>
+									<li>
+										<a href="#">Perchas</a>
+									</li>
+									<li>
+										<a href="#">Fundas</a>
+									</li>
+									<li>
+										<a href="#">Bases</a>
+									</li>
+									<li>
+										<a href="#">Juguetes de Ave</a>
+									</li>
+									<li>
+										<a href="#">Bebederos, comederos</a>
+									</li>
+									<li>
+										<a href="#">Juguetes</a>
+									</li>
+									<li>
+										<a href="#">Artículos de limpieza</a>
+									</li>	
+								</ul>
+							</li>
+						</ul> -->	
+					</li>
+					<li>
+						<a href="#">Reptiles</a>
+						<!-- <ul class="submenuLargo">
+							<li>
+								<a href="#">Alimento</a>
+								<ul>
+									<li><a href="">Alimento para reptiles</a></li>
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Accesorios y habitats</a>
+								<ul>
+									<li><a href="#">Accesorios para habitat</a></li>
+									<li><a href="#">Hábitats</a></li>
+									<li><a href="#">Alimentador y bebedero</a></li>
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Salud</a>
+								<ul>
+									<li><a href="">Medicamentos</a></li>	
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Equipos e iluminación</a>
+								<ul>
+									<li><a href="#">Calentadores y placas térmicas</a></li>
+									<li><a href="#">Equipos e iluminación</a></li>
+								</ul>	
+							</li>
+						</ul >-->	
+					</li>
+					<li>
+						<a href="#">Peces</a>
+<!-- 						<ul class="submenuLargo">
+							<li>
+								<a href="#">Alimento</a>
+								<ul>
+									<li><a href="#">Alimento</a></li>
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Habitat</a>
+								<ul>
+									<li><a href="#">Accesorios para hábitat</a></li>
+									<li><a href="#">Acuarios</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Accesorios</a>
+								<ul>
+									<li><a href="#">Adornos</a></li>
+									<li><a href="#">Gravas</a></li>
+									<li><a href="#">Plantas</a></li>
+									<li><a href="#">Accesorios varios</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Salud</a>
+								<ul>
+									<li><a href="#">Medicamentos</a></li>
+									<li><a href="#">Acondicionadores para agua</a></li>
+								</ul>
+							</li>
+						</ul> -->	
+					</li>
+					<li>
+						<a href="#">Otras especies</a>
+<!-- 						<ul class="submenuLargo">
+							<li>
+								<a href="#">Alimento</a>
+								<ul>
+									<li><a href="#">Alimentos</a></li>
+									<li><a href="#">Premios</a></li>
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Juguetes</a>
+								<ul>
+									<li><a href="#">Mordederas</a></li>
+									<li><a href="#">Tubos, esferas y ruedas</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Habitats y accesorios</a>
+								<ul>
+									<li><a href="#">Habitats</a></li>
+									<li><a href="#">Sustratos</a></li>
+									<li><a href="#">Accesorios</a></li>
+									<li><a href="#">Bebederos, comederos</a></li>
+									<li><a href="#">Limpieza</a></li>	
+								</ul>	
+							</li>
+							<li>
+								<a href="#">Salud</a>
+								<ul>
+    								<li><a href="#">Medicamentos</a></li>
+    								<li><a href="#">Suplementos alimenticios y vitáminicos</a></li>
+								</ul>
+							</li>
+						</ul>	 -->
+					</li>
+					<li>
+						<a href="#">Marcas</a>
+					</li>
+					<li>
+						<a href="#">Ofertas</a>
+					</li>	
+				</ul>
+				<div class="clear"></div>	
+			</div>
+		</div>
+		</header>
+
+		<!--Contenido principal-->
+	    <section class="contenedorPrincipal">
+<div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Adopciones +KOTA
+                    <!-- <small>Secondary Text</small> -->
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+            </div>
+
+            <div class="col-md-6">
+            	<h3>Nombre del perro</h3>
+                <hr>
+            	<div class="col-md-5 text-right">
+                <ul class="espacios">
+	                <li><h4><strong>Fecha de nacimiento:</h4></strong></li>
+	                <li><h4><strong>Raza:</h4></strong></li>
+	                <li><h4><strong>Subespecie:</h4></strong></li>
+	                <li><h4><strong>Sexo:</h4></strong> </li>
+	                <li><h4><strong>Compartir:</h4></strong> </li>
+                </ul>
+                </div>
+                <div class="col-md-7">
+                <ul class="espacios">
+	                <li> 12-12-12</li>
+	                <li> perro</li>
+	                <li> perro</li>
+	                <li>Masculino</li>
+	                <li> 
+	                	<ul class="redesSociales">
+						<li class="facebook"><a href="http://www.facebook.com/MaskotaMexico" target="_blank">Faceboook</a></li>
+						<li class="twitter"><a href="http://www.twitter.com/MaskotaMexico" target="_blank">Twitter</a></li>
+						</ul>	
+					</li>
+					<li>                
+				    <button type="button" class="btn btn-warning">Adoptar</button></li>
+                </ul>
+
+                </div>
+                          
+            </div>
+        </div>
+
+        <!-- /.row -->
+
+                <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Otras maskotas</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+    </div>
+	    </section>
+	    <!--Contenido principal-->
+
+		<footer>
+			<!--Enlaces de interes-->
+		<div class="wraper">
+			<div class="colPie">
+				<h3>Descubre +KOTA</h3>
+				<ul class="listaSimple">
+					<li><a href="#">Quiénes somos</a></li>
+					<li><a href="#">Tarjeta Más +KOTA</a></li>
+					<li><a href="#">Sucursales y servicios</a></li>
+					<li><a href="#">Bolsa de trabajo</a></li>	
+				</ul>
+				<ul>
+					<li><a href="#">+AMOR</a></li>
+					<li><a href="#">Bienestar animal</a></li>
+					<li><a href="#">Preguntas frecuentes</a></li>
+					<li><a href="#">Políticas de devoluciones y cambios</a></li>	
+				</ul>
+				<h3>Únete a nosotros</h3>
+				<ul class="redesSociales">
+					<li class="facebook"><a href="http://www.facebook.com/MaskotaMexico" target="_blank">Faceboook</a></li>
+					<li class="youTube"><a href="http://www.youtube.com/user/MaskotaMexico" target="_blank">You Tube</a></li>
+					<li class="twitter"><a href="http://www.twitter.com/MaskotaMexico" target="_blank">Twitter</a></li>
+					<li class="instagram"><a href="#" target="_blank">Instagram</a></li>
+				</ul>	
+			</div>
+			<div class="colPie">
+				<h3>Atención a clientes</h3>
+				<ul class="listaSimple">
+					<li>Lunes a Domingo de 9:00am a 20:00 hrs</li>
+					<li>Tel. (55) 2167-3010<br/>D.F. y su área metropolitana</li>
+					<li>Tel. 018000-910-5682<br/>Interior de la República</li>
+					<li><a href="#">atencion.clientes@maskota.com.mx</a></li>	
+				</ul>
+			</div>
+			<div class="colPie">
+				<a href="#"><img src="img/tienda.jpg"></a>
+				<!--<h3>Nuestros medios de pago</h3>
+
+				 <ul class="mediosDePago">
+					<li>Master Card</li>
+					<li>Visa</li>
+					<li>American Express</li>
+					<li>Dinners Club</li>
+					<li>OXXO</li>
+				</ul> -->
+				<h3>¡Encuentra el producto ideal para tu maskota!</h3>
+				 <!--<ul class="sellosSeguridad">
+					<li>Digi Cert</li>
+				</ul> -->	
+			</div>	
+		</div>
+		<!--/Enlaces de interes-->
+		
+		<!--Enlaces Legales y powered-->
+		<div class="wraper">
+			<div class="legales">
+				<ul class="enlacesLegales">
+					<li><a href="#">Políticas de privacidad</a></li>
+					<li><a href="#">Términos y condiciones +KOTA</a></li>
+				</ul>
+				<ul class="enlacesPowered">
+					<li><span>Todos los derechos reservados +KOTA 2015</span></li>
+					<!-- <li><a href="#"><span>Empowered by:</span><span class="blackSipLogo">BlackSip</span></a></li> -->
+					<li><a href="#"><span>Vtex</span></a></li>
+				</ul>	
+			</div>
+		</div>
+		<!--/Enlaces Legales y powered-->
+		</foter>	
+	</body>
+</html>

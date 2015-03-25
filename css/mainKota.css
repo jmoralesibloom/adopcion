@@ -1,0 +1,2192 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,600,700);
+/* line 1, ../sass/_general.scss */
+body, body * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: boder-box;
+  -moz-box-sizing: boder-box;
+  -ms-box-sizing: boder-box;
+  box-sizing: border-box;
+  font-family: "Cabin", Arial, sans-serif;
+/*  font-size: 12px;
+*/  color: #666666;
+  font-weight: 400;
+  letter-spacing: 0,5px;
+}
+
+/* line 8, ../sass/_general.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 11, ../sass/_general.scss */
+.clear {
+  clear: both;
+}
+
+/* line 14, ../sass/_general.scss */
+.wraper {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+   font-size: 12px;
+}
+
+/* line 19, ../sass/_general.scss */
+.ajax-content-loader {
+  display: none !important;
+}
+
+/* line 22, ../sass/_general.scss */
+header {
+  width: 100%;
+  float: left;
+}
+/* line 26, ../sass/_general.scss */
+header .ayudasComprador {
+  width: 100%;
+  background-color: #f58220;
+}
+/* line 31, ../sass/_general.scss */
+header .ayudasComprador a:hover {
+  text-decoration: underline;
+}
+/* line 37, ../sass/_general.scss */
+header .ayudasComprador .atencionTelefonica {
+  float: left;
+  background-position: -2px 1px;
+  padding: 8px 30px;
+  background-image: url("spriteEncabezado.png");
+  background-repeat: no-repeat;
+}
+/* line 43, ../sass/_general.scss */
+header .ayudasComprador .atencionTelefonica li {
+  display: inline-block;
+}
+/* line 46, ../sass/_general.scss */
+header .ayudasComprador .atencionTelefonica li:first-child {
+  margin-right: 5px;
+}
+/* line 50, ../sass/_general.scss */
+header .ayudasComprador .atencionTelefonica li:nth-child(2) {
+  border-right: solid 1px #fff;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+/* line 57, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas {
+  float: right;
+}
+/* line 60, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas > li {
+  display: inline-block;
+  margin: 5px 0 5px 10px;
+  border-left: solid 1px #fff;
+  padding: 3px 0 3px 30px;
+  position: relative;
+  background-image: url("spriteEncabezado.png");
+  background-repeat: no-repeat;
+}
+/* line 68, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas > li:first-child {
+  border-left: none;
+}
+/* line 71, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas > li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 22px;
+  left: 0;
+  width: 150px;
+  padding: 5px 10px;
+  left: -20px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 3px #ccc;
+  -moz-box-shadow: 0px 0px 3px #ccc;
+  -ms-box-shadow: 0px 0px 3px #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+}
+/* line 83, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas > li ul:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: 55px;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-bottom: solid 7px #fff;
+}
+/* line 94, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas > li ul li {
+  padding: 5px 0;
+  display: block;
+}
+/* line 98, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas > li ul a {
+  color: #666666;
+  display: block;
+}
+/* line 102, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas > li ul a:hover {
+  color: #552988;
+  text-decoration: underline;
+}
+/* line 109, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas > li:hover ul {
+  display: block;
+}
+/* line 116, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas .chat {
+  background-position: -8px -140px;
+  cursor: pointer;
+}
+/* line 121, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas .ayuda {
+  background-position: -5px -277px;
+}
+/* line 125, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas .servicios {
+  background-position: -5px -414px;
+}
+/* line 129, ../sass/_general.scss */
+header .ayudasComprador .otrasAyudas .tiendas {
+  background-position: -5px -550px;
+  cursor: pointer;
+}
+/* line 138, ../sass/_general.scss */
+header .ayudasComprador li {
+  color: white;
+}
+/* line 143, ../sass/_general.scss */
+header .ayudasComprador a {
+  color: white;
+}
+/* line 148, ../sass/_general.scss */
+header .encabezado {
+  background-color: #552988;
+  padding: 20px 0;
+  transition: padding 1s;
+}
+/* line 153, ../sass/_general.scss */
+header .encabezado h1 {
+  width: 210px;
+  height: 60px;
+  overflow: hidden;
+  background-image: url("logoMasKota.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  transition: width 1s;
+  transition: height 1s;
+  transition: background-size 1s;
+}
+/* line 166, ../sass/_general.scss */
+header .encabezado h1 a {
+  display: block;
+  width: 100%;
+  height: 60px;
+  text-indent: -999px;
+}
+/* line 174, ../sass/_general.scss */
+header .encabezado .carritoCompras {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("spriteEncabezado.png");
+  background-repeat: no-repeat;
+  background-position: 91px -955px;
+  width: 130px;
+  height: 30px;
+  position: relative;
+}
+/* line 185, ../sass/_general.scss */
+header .encabezado .carritoCompras:hover .total-cart-em {
+  text-decoration: underline;
+}
+/* line 190, ../sass/_general.scss */
+header .encabezado .carritoCompras .infoCarrito {
+  float: left;
+  width: 100%;
+}
+/* line 195, ../sass/_general.scss */
+header .encabezado .carritoCompras .infoCarrito a {
+  width: 100%;
+  height: 30px;
+  float: left;
+}
+/* line 201, ../sass/_general.scss */
+header .encabezado .carritoCompras .vtexsc-center {
+  background-color: #fff;
+  position: relative;
+  z-index: 2000;
+}
+/* line 206, ../sass/_general.scss */
+header .encabezado .carritoCompras .vtexsc-center:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: 40px;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-bottom: solid 7px #fff;
+}
+/* line 217, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  -webkit-box-shadow: 0px 0px 3px #ccc;
+  -moz-box-shadow: 0px 0px 3px #ccc;
+  -ms-box-shadow: 0px 0px 3px #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+}
+/* line 223, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito .vtexsc-productList {
+  background-color: #fff;
+  position: relative;
+  width: 400px;
+  display: block !important;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 3px #ccc;
+  -moz-box-shadow: 0px 0px 3px #ccc;
+  -ms-box-shadow: 0px 0px 3px #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+}
+/* line 232, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito .vtexsc-productList thead {
+  text-transform: uppercase;
+  display: none;
+}
+/* line 238, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito .cartFooter {
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+}
+/* line 243, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito .cartFooter .cartTotal {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+/* line 248, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito .cartFooter .cartTotal .vtexsc-text {
+  color: #000;
+  font-weight: bold;
+  margin-left: 10px;
+}
+/* line 255, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito .cartFooter .cartCheckout {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  background-color: #f58220;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 180px;
+}
+/* line 265, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito .cartFooter .cartCheckout:hover {
+  background-color: #ff9966;
+}
+/* line 269, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito .cartFooter .cartCheckout:before {
+  content: "Pagar";
+  display: block;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding: 5px 0;
+}
+/* line 282, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito th.cartSkuName, header .encabezado .carritoCompras .resumenCarrito td.cartSkuName {
+  padding: 10px;
+  width: 150px;
+}
+/* line 291, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito td.cartSkuName a:hover {
+  text-decoration: underline;
+}
+/* line 296, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito td.cartSkuPrice {
+  width: 50px;
+}
+/* line 299, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito td.cartSkuQuantity {
+  width: 50px;
+  text-align: center;
+}
+/* line 304, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito td.cartSkuActions {
+  width: 30px;
+}
+/* line 307, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito td.cartSkuActions .cartSkuRemove {
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+/* line 312, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito td.cartSkuActions .cartSkuRemove a {
+  display: block !important;
+  width: 15px;
+  height: 15px;
+  float: left;
+  background-color: #552988;
+  cursor: pointer;
+  text-indent: -999px;
+  overflow: hidden;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  position: relative;
+}
+/* line 325, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito td.cartSkuActions .cartSkuRemove a:hover {
+  background-color: #825da4;
+}
+/* line 329, ../sass/_general.scss */
+header .encabezado .carritoCompras .resumenCarrito td.cartSkuActions .cartSkuRemove a:before {
+  content: "x";
+  text-indent: 0;
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 5px;
+}
+/* line 342, ../sass/_general.scss */
+header .encabezado .carritoCompras .title {
+  display: none;
+}
+/* line 345, ../sass/_general.scss */
+header .encabezado .carritoCompras .total-cart {
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+/* line 351, ../sass/_general.scss */
+header .encabezado .carritoCompras .total-cart strong {
+  display: none;
+}
+/* line 354, ../sass/_general.scss */
+header .encabezado .carritoCompras .total-cart .total-cart-em {
+  color: white;
+  font-style: normal !important;
+  font-weight: 600px;
+  font-size: 14px;
+}
+/* line 360, ../sass/_general.scss */
+header .encabezado .carritoCompras .total-cart .total-cart-em:before {
+  content: "MX";
+}
+/* line 366, ../sass/_general.scss */
+header .encabezado .carritoCompras .amount-items, header .encabezado .carritoCompras .amount-kits {
+  display: none;
+}
+/* line 369, ../sass/_general.scss */
+header .encabezado .carritoCompras .amount-products {
+  position: absolute;
+  right: 11px;
+  top: 0;
+}
+/* line 374, ../sass/_general.scss */
+header .encabezado .carritoCompras .amount-products strong {
+  display: none;
+}
+/* line 377, ../sass/_general.scss */
+header .encabezado .carritoCompras .amount-products .amount-products-em {
+  color: white;
+  font-style: normal !important;
+  color: #f58220;
+}
+/* line 385, ../sass/_general.scss */
+header .encabezado .tuCuenta {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 80px;
+  position: relative;
+}
+/* line 391, ../sass/_general.scss */
+header .encabezado .tuCuenta li ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  padding: 8px 10px;
+  left: -40px;
+  top: 25px;
+  -webkit-box-shadow: 0px 0px 3px #ccc;
+  -moz-box-shadow: 0px 0px 3px #ccc;
+  -ms-box-shadow: 0px 0px 3px #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+  z-index: 100;
+}
+/* line 402, ../sass/_general.scss */
+header .encabezado .tuCuenta li ul:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: 90px;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-bottom: solid 7px #fff;
+}
+/* line 413, ../sass/_general.scss */
+header .encabezado .tuCuenta li ul li {
+  padding: 5px 0;
+}
+/* line 417, ../sass/_general.scss */
+header .encabezado .tuCuenta li ul li:hover a {
+  color: #552988;
+  text-decoration: underline;
+}
+/* line 427, ../sass/_general.scss */
+header .encabezado .tuCuenta .btnIniciar {
+  width: 100%;
+  background-color: #f58220;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 433, ../sass/_general.scss */
+header .encabezado .tuCuenta .btnIniciar a {
+  color: white;
+  display: block;
+  padding: 2px;
+  text-transform: uppercase;
+}
+/* line 440, ../sass/_general.scss */
+header .encabezado .tuCuenta .btnIniciar:hover {
+  background-color: #ff9966;
+}
+/* line 442, ../sass/_general.scss */
+header .encabezado .tuCuenta .btnIniciar:hover a {
+  text-decoration: none;
+  color: white;
+}
+/* line 449, ../sass/_general.scss */
+header .encabezado .tuCuenta > li {
+  color: white;
+  font-size: 14px;
+  font-weight: 600px;
+  background-image: url("spriteEncabezado.png");
+  background-repeat: no-repeat;
+  background-position: -5px -820px;
+  padding: 5px 0px 5px 40px;
+}
+/* line 460, ../sass/_general.scss */
+header .encabezado .tuCuenta > li:hover ul {
+  display: block;
+}
+/* line 469, ../sass/_general.scss */
+header .encabezado .tuCuenta li:nth-child(2) a {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+/* line 473, ../sass/_general.scss */
+header .encabezado .tuCuenta li:nth-child(2) a:hover {
+  text-decoration: none;
+}
+/* line 478, ../sass/_general.scss */
+header .encabezado .tuCuenta li:nth-child(6) {
+  font-weight: bold;
+}
+/* line 483, ../sass/_general.scss */
+header .encabezado .tuCuenta .itemTarjeta {
+  padding-left: 10px;
+  position: relative;
+}
+/* line 486, ../sass/_general.scss */
+header .encabezado .tuCuenta .itemTarjeta:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-left: 3px solid #f58220;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+/* line 501, ../sass/_general.scss */
+header .encabezado .menuFijoEncabezado {
+  vertical-align: middle;
+  color: #fff;
+  display: none;
+  transition: display 1s;
+  cursor: pointer;
+  padding-left: 30px;
+  background-image: url("/arquivos/iconMenuFijo.png");
+  background-repeat: no-repeat;
+  background-position: -2px -3px;
+  background-size: 35%;
+  margin: 0 30px;
+}
+/* line 514, ../sass/_general.scss */
+header .encabezado .menuFijoEncabezado span {
+  color: #fff;
+  font-size: 14px;
+}
+/* line 518, ../sass/_general.scss */
+header .encabezado .menuFijoEncabezado span:hover {
+  text-decoration: underline;
+}
+/* line 523, ../sass/_general.scss */
+header .encabezado .buscador {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 60px;
+  transition: margin 1s;
+}
+/* line 529, ../sass/_general.scss */
+header .encabezado .buscador fieldset {
+  border: none;
+  position: relative;
+}
+/* line 533, ../sass/_general.scss */
+header .encabezado .buscador fieldset legend, header .encabezado .buscador fieldset label, header .encabezado .buscador fieldset select {
+  display: none;
+}
+/* line 537, ../sass/_general.scss */
+header .encabezado .buscador fieldset input[type=text] {
+  width: 500px;
+  height: 30px;
+  padding: 5px 10px;
+  border: none;
+  color: #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 547, ../sass/_general.scss */
+header .encabezado .buscador fieldset input[type=button] {
+  width: 40px;
+  height: 30px;
+  border: none;
+  background-image: url("spriteEncabezado.png");
+  background-repeat: no-repeat;
+  text-indent: -999px;
+  overflow: hidden;
+  background-color: #f58220;
+  background-position: -3px -682px;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+/* line 562, ../sass/_general.scss */
+header .encabezado .buscador fieldset input[type=button]:hover {
+  background-color: #ff9966;
+}
+/* line 571, ../sass/_general.scss */
+header .encabezadoFijo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  width: 100%;
+  padding: 5px;
+}
+/* line 579, ../sass/_general.scss */
+header .encabezadoFijo h1 {
+  width: 170px;
+  height: 38px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+/* line 586, ../sass/_general.scss */
+header .encabezadoFijo .buscador {
+  margin: 0 20px !important;
+}
+/* line 590, ../sass/_general.scss */
+header .encabezadoFijo .menuFijoEncabezado {
+  display: inline-block;
+}
+/* line 593, ../sass/_general.scss */
+header .encabezadoFijo .tuCuenta {
+  margin-right: 40px;
+}
+/* line 598, ../sass/_general.scss */
+header .menuFijo {
+  position: fixed;
+  top: 47px;
+  left: 0;
+  background-color: #fff;
+  z-index: 200;
+  width: 100%;
+}
+/* line 607, ../sass/_general.scss */
+header .menuPrincipal {
+  width: 100%;
+  border-bottom: solid 1px #552988;
+  float: left;
+  background-color: white;
+}
+/* line 615, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul {
+  float: left;
+  padding-top: 3px;
+  position: relative;
+}
+/* line 620, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li {
+  float: left;
+  width: 114px;
+  text-align: center;
+}
+/* line 626, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li:hover > a {
+  background-color: #f6f6f6;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+/* line 633, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li:last-child a {
+  background-color: #ff1235;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  color: white;
+}
+/* line 638, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li:last-child a:hover {
+  background-color: #f58220;
+}
+/* line 645, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li > ul {
+  display: none;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 3px #ccc;
+  -moz-box-shadow: 0px 0px 3px #ccc;
+  -ms-box-shadow: 0px 0px 3px #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+  z-index: 300;
+}
+/* line 651, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li > ul > li {
+  text-align: left;
+}
+/* line 656, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .subMenuCorto {
+  background-color: white;
+  width: 200px;
+  top: 38px;
+  position: absolute;
+}
+/* line 662, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .subMenuCorto:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: 55px;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-bottom: solid 7px #fff;
+}
+/* line 673, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .subMenuCorto li {
+  padding: 5px 0;
+}
+/* line 676, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .subMenuCorto li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #552988;
+}
+/* line 679, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .subMenuCorto li a:hover {
+  color: #f58220;
+  text-decoration: underline;
+}
+/* line 686, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .submenuLargo {
+  position: absolute;
+  width: 1140px;
+  left: 0;
+  top: 38px;
+  background-color: white;
+  height: 430px;
+  padding: 30px;
+}
+/* line 695, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .submenuLargo > li {
+  float: left;
+  width: 150px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+/* line 701, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .submenuLargo > li > a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #552988;
+}
+/* line 704, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .submenuLargo > li > a:hover {
+  color: #f58220;
+  text-decoration: underline;
+}
+/* line 710, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .submenuLargo > li ul a {
+  padding: 5px 0;
+  margin-left: 10px;
+  float: left;
+  width: 100%;
+}
+/* line 716, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li .submenuLargo > li ul a:hover {
+  color: #f58220;
+}
+/* line 727, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+}
+/* line 733, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li > a {
+  color: #552988;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  float: left;
+  padding: 10px 0;
+  margin: 0;
+}
+/* line 742, ../sass/_general.scss */
+header .menuPrincipal .wraper > ul > li > a:hover {
+  background-color: #f6f6f6;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+/* line 757, ../sass/_general.scss */
+.contenedorPrincipal {
+  float: left;
+  width: 100%;
+  padding-top: 20px;
+}
+/* line 762, ../sass/_general.scss */
+.contenedorPrincipal .migaPan {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 767, ../sass/_general.scss */
+.contenedorPrincipal .migaPan li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 15px;
+  margin-left: 10px;
+  background-image: url("/arquivos/bulletMiga.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+}
+/* line 776, ../sass/_general.scss */
+.contenedorPrincipal .migaPan li a {
+  font-size: 13px;
+}
+/* line 779, ../sass/_general.scss */
+.contenedorPrincipal .migaPan li a:hover {
+  color: #f58220;
+}
+/* line 784, ../sass/_general.scss */
+.contenedorPrincipal .migaPan li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  background-image: none;
+}
+/* line 789, ../sass/_general.scss */
+.contenedorPrincipal .migaPan li:first-child a {
+  color: #552988;
+  text-indent: -999px;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  position: relative;
+  width: 37px;
+  height: 15px;
+}
+/* line 799, ../sass/_general.scss */
+.contenedorPrincipal .migaPan li:first-child a:before {
+  content: "+KOTA";
+  position: absolute;
+  left: 0;
+  text-indent: 0;
+  top: 0px;
+}
+
+/* line 811, ../sass/_general.scss */
+.contenidoFijo {
+  margin-top: 130px;
+}
+
+/* line 814, ../sass/_general.scss */
+.localizadorSuscripcion {
+  width: 100%;
+  float: left;
+  background-color: #552988;
+  margin: 30px 0;
+  color: #fff;
+  padding: 10px 0;
+}
+/* line 823, ../sass/_general.scss */
+.localizadorSuscripcion .wraper > div {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 70px;
+}
+/* line 828, ../sass/_general.scss */
+.localizadorSuscripcion .wraper > div:first-child {
+  border-right: solid 1px white;
+  padding-left: 0;
+  width: 55%;
+}
+/* line 833, ../sass/_general.scss */
+.localizadorSuscripcion .wraper > div h3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* line 839, ../sass/_general.scss */
+.localizadorSuscripcion .wraper > div p {
+  color: white;
+}
+/* line 844, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .localizador > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 848, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .localizador .horarioTienda {
+  padding-left: 20px;
+}
+/* line 851, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .localizador form {
+  position: relative;
+}
+/* line 854, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .localizador form input[type="button"] {
+  width: 55px;
+  height: 35px;
+  margin-left: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 865, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .Suscripción h3 {
+  margin-bottom: 10px;
+}
+/* line 868, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .Suscripción .newsletter-title {
+  display: none;
+}
+/* line 872, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .Suscripción fieldset {
+  border: none;
+  position: relative;
+  width: auto;
+  float: left;
+}
+/* line 878, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .Suscripción fieldset p {
+  display: none;
+}
+/* line 882, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .Suscripción fieldset #newsletterClientName {
+  display: none;
+}
+/* line 886, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .Suscripción fieldset input[type="text"] {
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  color: #999999;
+  text-transform: uppercase;
+  width: 355px;
+  height: 30px;
+  padding: 10px;
+}
+/* line 896, ../sass/_general.scss */
+.localizadorSuscripcion .wraper .Suscripción fieldset input[type="button"] {
+  position: absolute;
+  width: 95px;
+  height: 30px;
+  right: 0;
+  top: 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+/* line 909, ../sass/_general.scss */
+.localizadorSuscripcion select {
+  background-color: white;
+  border: none;
+  width: 225px;
+  height: 35px;
+  padding: 5px 5px 5px 40px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("/arquivos/bgLocalizarTienda.jpg");
+  background-repeat: no-repeat;
+  background-position: 7px 6px;
+  text-transform: uppercase;
+  color: #999999;
+}
+/* line 923, ../sass/_general.scss */
+.localizadorSuscripcion select option {
+  padding: 10px;
+  border-top: solid 1px #552988;
+  margin: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* line 932, ../sass/_general.scss */
+.localizadorSuscripcion input[type="button"] {
+  background-color: #f58220;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* line 939, ../sass/_general.scss */
+.localizadorSuscripcion input[type="button"]:hover {
+  background-color: #ff9966;
+}
+
+/* line 945, ../sass/_general.scss */
+footer {
+  width: 100%;
+  float: left;
+  padding-bottom: 20px;
+  color: #666666;
+}
+/* line 951, ../sass/_general.scss */
+footer .legales {
+  width: 100%;
+  float: left;
+  padding-top: 20px;
+  border-top: solid 1px #552988;
+}
+/* line 958, ../sass/_general.scss */
+footer .legales a:hover {
+  color: #f58220;
+}
+/* line 963, ../sass/_general.scss */
+footer .legales li {
+  display: inline-block;
+  margin-left: 5px;
+  padding-left: 5px;
+  border-left: solid 1px #666666;
+  vertical-align: middle;
+}
+/* line 970, ../sass/_general.scss */
+footer .legales li:first-child {
+  margin-left: 0px;
+  padding-left: 0px;
+  border-left: none;
+}
+/* line 977, ../sass/_general.scss */
+footer .legales .enlacesLegales {
+  float: left;
+}
+/* line 980, ../sass/_general.scss */
+footer .legales .enlacesPowered {
+  float: right;
+}
+/* line 983, ../sass/_general.scss */
+footer .legales .enlacesPowered span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 988, ../sass/_general.scss */
+footer .legales .enlacesPowered .blackSipLogo {
+  width: 75px;
+  height: 30px;
+  background-image: url("/arquivos/iconsPowered.jpg");
+  background-repeat: no-repeat;
+  text-indent: -999px;
+  overflow: hidden;
+}
+/* line 999, ../sass/_general.scss */
+footer .legales .enlacesPowered li:last-child span {
+  width: 75px;
+  height: 30px;
+  background-image: url("/arquivos/iconsPowered.jpg");
+  background-repeat: no-repeat;
+  text-indent: -999px;
+  overflow: hidden;
+  background-position: -81px 0;
+}
+/* line 1014, ../sass/_general.scss */
+footer .colPie {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 75px;
+}
+/* line 1020, ../sass/_general.scss */
+footer .colPie a:hover {
+  color: #f58220;
+}
+/* line 1025, ../sass/_general.scss */
+footer .colPie ul {
+  margin-bottom: 20px;
+}
+/* line 1029, ../sass/_general.scss */
+footer .colPie:first-child {
+  margin-left: 0;
+}
+/* line 1032, ../sass/_general.scss */
+footer .colPie:first-child ul {
+  display: inline-block;
+  margin-left: 30px;
+}
+/* line 1039, ../sass/_general.scss */
+footer .colPie:first-child ul li {
+  padding: 7px 0 7px 15px;
+  background-image: url("/arquivos/bulletLista.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+}
+/* line 1047, ../sass/_general.scss */
+footer .colPie:first-child ul:nth-child(2), footer .colPie:first-child ul:nth-child(5) {
+  margin-left: 0;
+}
+/* line 1053, ../sass/_general.scss */
+footer .colPie:first-child ul:nth-child(5) li {
+  background-image: none;
+  padding: 0;
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 1059, ../sass/_general.scss */
+footer .colPie:first-child ul:nth-child(5) li a {
+  background-image: url("/arquivos/iconsSocial.jpg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 32px;
+  float: left;
+  text-indent: -999px;
+  overflow: hidden;
+}
+/* line 1069, ../sass/_general.scss */
+footer .colPie:first-child ul:nth-child(5) li:first-child {
+  margin-left: 0;
+}
+/* line 1075, ../sass/_general.scss */
+footer .colPie:first-child ul:nth-child(5) li:nth-child(2) a {
+  background-position: -83px 0;
+}
+/* line 1083, ../sass/_general.scss */
+footer .colPie:first-child ul:nth-child(5) li:nth-child(3) a {
+  background-position: -41px 0;
+}
+/* line 1090, ../sass/_general.scss */
+footer .colPie:first-child ul:nth-child(5) li:nth-child(4) a {
+  background-position: -121px 0;
+}
+/* line 1102, ../sass/_general.scss */
+footer .colPie:nth-child(2) li {
+  padding: 4px 0 4px 15px;
+  background-image: url("/arquivos/bulletLista.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+/* line 1111, ../sass/_general.scss */
+footer .colPie:nth-child(3) li {
+  display: inline-block;
+  margin-left: 15px;
+  text-indent: -999px;
+  overflow: hidden;
+}
+/* line 1117, ../sass/_general.scss */
+footer .colPie:nth-child(3) li:first-child {
+  margin-left: 0;
+}
+/* line 1123, ../sass/_general.scss */
+footer .colPie:nth-child(3) .mediosDePago li {
+  height: 40px;
+  background-image: url("/arquivos/iconsMetodPayment.jpg");
+  background-repeat: no-repeat;
+}
+/* line 1128, ../sass/_general.scss */
+footer .colPie:nth-child(3) .mediosDePago li:nth-child(1) {
+  background-position: 0 0;
+  width: 55px;
+}
+/* line 1132, ../sass/_general.scss */
+footer .colPie:nth-child(3) .mediosDePago li:nth-child(2) {
+  background-position: -60px 0;
+  width: 60px;
+}
+/* line 1136, ../sass/_general.scss */
+footer .colPie:nth-child(3) .mediosDePago li:nth-child(3) {
+  background-position: -134px 0;
+  width: 40px;
+}
+/* line 1140, ../sass/_general.scss */
+footer .colPie:nth-child(3) .mediosDePago li:nth-child(4) {
+  background-position: -200px 0;
+  width: 40px;
+}
+/* line 1144, ../sass/_general.scss */
+footer .colPie:nth-child(3) .mediosDePago li:nth-child(4) {
+  background-position: -188px 0;
+  width: 58px;
+}
+/* line 1148, ../sass/_general.scss */
+footer .colPie:nth-child(3) .mediosDePago li:nth-child(5) {
+  background-position: -258px 0;
+  width: 69px;
+}
+/* line 1157, ../sass/_general.scss */
+footer .colPie:nth-child(3) .sellosSeguridad li {
+  height: 40px;
+  background-image: url("/arquivos/iconsSecureOk.jpg");
+  background-repeat: no-repeat;
+}
+/* line 1162, ../sass/_general.scss */
+footer .colPie:nth-child(3) .sellosSeguridad li:nth-child(1) {
+  width: 74px;
+}
+/* line 1170, ../sass/_general.scss */
+footer h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #552988;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/_producto.scss */
+.fndCaja {
+  display: none;
+}
+
+/* line 5, ../sass/_producto.scss */
+.infoProducto {
+  width: 100%;
+  float: left;
+}
+/* line 9, ../sass/_producto.scss */
+.infoProducto > div {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 14, ../sass/_producto.scss */
+.infoProducto .imagenProducto {
+  width: 460px;
+  float: left;
+  margin-right: 30px;
+}
+/* line 19, ../sass/_producto.scss */
+.infoProducto .imagenProducto #image {
+  float: right;
+  width: 360px;
+  height: 360px;
+}
+/* line 24, ../sass/_producto.scss */
+.infoProducto .imagenProducto .thumbs {
+  float: left;
+  width: 68px;
+}
+/* line 28, ../sass/_producto.scss */
+.infoProducto .imagenProducto .thumbs li {
+  margin-bottom: 20px;
+}
+/* line 32, ../sass/_producto.scss */
+.infoProducto .imagenProducto .thumbs img {
+  width: 100%;
+}
+/* line 36, ../sass/_producto.scss */
+.infoProducto .imagenProducto .zoomPad {
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 42, ../sass/_producto.scss */
+.infoProducto .imagenProducto .zoomPad .zoomWindow {
+  overflow: hidden;
+  width: 360px !important;
+  height: 360px !important;
+  position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+}
+/* line 50, ../sass/_producto.scss */
+.infoProducto .imagenProducto .zoomPad .zoomWindow img {
+  left: -200px;
+  top: -200px;
+}
+/* line 57, ../sass/_producto.scss */
+.infoProducto .detallesProducto {
+  width: 650px;
+}
+/* line 60, ../sass/_producto.scss */
+.infoProducto .detallesProducto .tituloCalificacion {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #999999;
+}
+/* line 66, ../sass/_producto.scss */
+.infoProducto .detallesProducto .nombreProducto {
+  color: #666666;
+  margin-bottom: 10px;
+}
+/* line 70, ../sass/_producto.scss */
+.infoProducto .detallesProducto .nombreProducto .productName {
+  font-size: 26px;
+  padding-right: 50px;
+}
+/* line 76, ../sass/_producto.scss */
+.infoProducto .detallesProducto .codigoProducto {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: solid 1px #999999;
+}
+/* line 84, ../sass/_producto.scss */
+.infoProducto .detallesProducto .codigoProducto > span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 14px;
+}
+/* line 91, ../sass/_producto.scss */
+.infoProducto .detallesProducto .codigoProducto .productReference {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #000;
+}
+/* line 98, ../sass/_producto.scss */
+.infoProducto .detallesProducto .codigoProducto .skuReference {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #000;
+}
+/* line 106, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 111, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto strong:first-child {
+  display: none;
+}
+/* line 115, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 120, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto .rating-produto {
+  overflow: hidden;
+  text-indent: -999px;
+  background-image: url("/arquivos/spritEstrellas.png");
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 20px;
+  display: inline-block;
+}
+/* line 130, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto .avaliacao1 {
+  background-position: 0px -179px;
+}
+/* line 134, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto .avaliacao2 {
+  background-position: 0px -151px;
+}
+/* line 138, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto .avaliacao3 {
+  background-position: 0px -121px;
+}
+/* line 142, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto .avaliacao4 {
+  background-position: 0px -94px;
+}
+/* line 146, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto .avaliacao5 {
+  background-position: 0px -64px;
+}
+/* line 150, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto .avaliacao0 {
+  background-image: none;
+  width: 240px;
+  text-indent: -999px;
+}
+/* line 154, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto .avaliacao0:before {
+  content: "Este producto aun no ha sido calificado";
+  text-indent: 0;
+  display: block;
+  font-size: 14px;
+}
+/* line 162, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto a {
+  font-size: 14px;
+  color: #0071bc;
+}
+/* line 166, ../sass/_producto.scss */
+.infoProducto .detallesProducto .calificacionProducto a:hover {
+  color: #f58220;
+  text-decoration: underline;
+}
+/* line 173, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio, .infoProducto .detallesProducto .presentacion {
+  width: 360px;
+  float: left;
+}
+/* line 179, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .skuListPrice:before, .infoProducto .detallesProducto .precio .skuBestPrice:before, .infoProducto .detallesProducto .precio .economia:before, .infoProducto .detallesProducto .presentacion .skuListPrice:before, .infoProducto .detallesProducto .presentacion .skuBestPrice:before, .infoProducto .detallesProducto .presentacion .economia:before {
+  content: "MX";
+}
+/* line 183, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .tachar, .infoProducto .detallesProducto .presentacion .tachar {
+  font-size: 12px;
+  text-decoration: line-through;
+}
+/* line 187, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .mejorPrecio, .infoProducto .detallesProducto .presentacion .mejorPrecio {
+  font-size: 20px;
+  color: #ff1235;
+}
+/* line 192, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio em, .infoProducto .detallesProducto .presentacion em {
+  font-size: 14px;
+  text-align: left;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+/* line 198, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio em span, .infoProducto .detallesProducto .precio em strong, .infoProducto .detallesProducto .presentacion em span, .infoProducto .detallesProducto .presentacion em strong {
+  font-size: 14px;
+  text-align: right;
+  width: 160px;
+  font-style: normal;
+  padding-left: 10px;
+}
+/* line 209, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .valor-dividido span, .infoProducto .detallesProducto .presentacion .valor-dividido span {
+  font-size: 14px;
+}
+/* line 212, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .valor-dividido span label, .infoProducto .detallesProducto .presentacion .valor-dividido span label {
+  font-size: 14px;
+}
+/* line 215, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .valor-dividido span:first-child, .infoProducto .detallesProducto .presentacion .valor-dividido span:first-child {
+  padding-left: 0px;
+}
+/* line 220, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .preco-a-vista, .infoProducto .detallesProducto .presentacion .preco-a-vista {
+  margin-bottom: 10px;
+  display: none !important;
+  visibility: hidden;
+}
+/* line 226, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .economia-de .economia, .infoProducto .detallesProducto .presentacion .economia-de .economia {
+  color: #ff1235;
+}
+/* line 230, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .sku-selector-container, .infoProducto .detallesProducto .presentacion .sku-selector-container {
+  margin-top: 10px;
+}
+/* line 233, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .sku-selector-container .specification, .infoProducto .detallesProducto .presentacion .sku-selector-container .specification {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* line 239, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .sku-selector-container .skuList input[type="radio"], .infoProducto .detallesProducto .presentacion .sku-selector-container .skuList input[type="radio"] {
+  display: none;
+}
+/* line 243, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .sku-selector-container .skuList .dimension-Presentacion, .infoProducto .detallesProducto .presentacion .sku-selector-container .skuList .dimension-Presentacion {
+  width: 80px;
+  padding: 10px 0;
+  margin-left: 10px;
+  border: solid 1px #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 255, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .sku-selector-container .skuList .dimension-Presentacion:nth-child(2), .infoProducto .detallesProducto .presentacion .sku-selector-container .skuList .dimension-Presentacion:nth-child(2) {
+  margin-left: 0;
+}
+/* line 258, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .sku-selector-container .skuList .dimension-Presentacion:hover, .infoProducto .detallesProducto .presentacion .sku-selector-container .skuList .dimension-Presentacion:hover {
+  background-color: #eceef0;
+}
+/* line 261, ../sass/_producto.scss */
+.infoProducto .detallesProducto .precio .sku-selector-container .skuList .dimension-Presentacion.checked, .infoProducto .detallesProducto .presentacion .sku-selector-container .skuList .dimension-Presentacion.checked {
+  background-color: #825da4;
+  color: white;
+}
+/* line 271, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto {
+  width: 260px;
+  float: right;
+}
+/* line 275, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .agregarCaja {
+  border: solid 1px #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin-bottom: 10px;
+}
+/* line 284, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .notifyme .notifymetitle {
+  color: #552988;
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+/* line 291, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .notifyme fieldset {
+  border: none;
+}
+/* line 294, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .notifyme fieldset p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* line 299, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .notifyme fieldset input[type="text"] {
+  border: solid 1px #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  width: 100%;
+  color: #999999;
+  padding: 5px 5px 5px 30px;
+  margin-bottom: 10px;
+  background-image: url("/arquivos/iconsNotifyme.jpg");
+  background-repeat: no-repeat;
+}
+/* line 310, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .notifyme fieldset input[type="button"] {
+  width: 100%;
+  border: none;
+  background-color: #f58220;
+  text-align: center;
+  padding: 5px 0;
+  display: block;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 322, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .notifyme fieldset input[type="button"]:hover {
+  background-color: #ff9966;
+}
+/* line 327, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .notifyme fieldset .sku-notifyme-client-name {
+  background-position: 9px 7px;
+}
+/* line 331, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .notifyme fieldset .sku-notifyme-client-email {
+  background-position: 9px -47px;
+}
+/* line 337, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .buy-in-page-quantity {
+  border: solid 1px #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px 0;
+  display: inline-block !important;
+  vertical-align: top;
+  margin: 0 10px;
+}
+/* line 349, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .textoCantidad {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 14px;
+}
+/* line 357, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .control {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+/* line 367, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .control:hover {
+  background-color: #eceef0;
+}
+/* line 373, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .restar:before {
+  content: "-";
+  position: absolute;
+  top: 6px;
+  left: 12px;
+}
+/* line 382, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .sumar:before {
+  content: "+";
+  position: absolute;
+  top: 6px;
+  left: 12px;
+}
+/* line 389, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .buy-in-page-button {
+  width: 100%;
+  background-color: #f58220;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: 200;
+  margin-top: 15px;
+  background-image: url("/arquivos/bulletComprar.png");
+  background-repeat: no-repeat;
+  background-position: 146px 14px;
+}
+/* line 403, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .buy-in-page-button:hover {
+  background-color: #ff9966;
+}
+/* line 407, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .textoAlerta {
+  margin-top: 10px;
+  color: #ff1235;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 414, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .infoContacto {
+  text-align: center;
+  color: #000;
+}
+/* line 418, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .infoContacto h3 {
+  font-size: 12px;
+}
+/* line 423, ../sass/_producto.scss */
+.infoProducto .detallesProducto .agregrarProducto .infoContacto ul li {
+  display: inline-block;
+}
+
+/* line 432, ../sass/_producto.scss */
+.descipcionProducto {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 437, ../sass/_producto.scss */
+.descipcionProducto .tabs {
+  display: block;
+  margin-top: 20px;
+}
+/* line 441, ../sass/_producto.scss */
+.descipcionProducto .tabs li {
+  display: inline-block;
+}
+/* line 444, ../sass/_producto.scss */
+.descipcionProducto .tabs li span {
+  display: block;
+  padding: 15px 40px;
+  color: #999999;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+/* line 454, ../sass/_producto.scss */
+.descipcionProducto .tabs li span:hover {
+  color: #552988;
+}
+/* line 458, ../sass/_producto.scss */
+.descipcionProducto .tabs li .tabActive {
+  border: solid 1px #552988;
+  border-bottom: none;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  color: #552988;
+  background-color: white;
+}
+/* line 468, ../sass/_producto.scss */
+.descipcionProducto .contDescripciones {
+  border-top: solid 1px #552988;
+  position: relative;
+  margin-top: -1px;
+}
+/* line 473, ../sass/_producto.scss */
+.descipcionProducto .productDescription {
+  font-size: 14px;
+  padding: 35px;
+  line-height: 18px;
+  color: #666666;
+}
+
+/* line 482, ../sass/_producto.scss */
+.relacionados {
+  width: 100%;
+  float: left;
+}
+/* line 486, ../sass/_producto.scss */
+.relacionados .titRelacionados {
+  display: block;
+  font-size: 20px;
+  color: #552988;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* line 496, ../sass/_producto.scss */
+.calificacionUsuarios {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #e5e6e7;
+  float: left;
+}
+/* line 502, ../sass/_producto.scss */
+.calificacionUsuarios hr {
+  display: none;
+}
+/* line 506, ../sass/_producto.scss */
+.calificacionUsuarios h4 {
+  font-size: 22px;
+  color: #666666;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 512, ../sass/_producto.scss */
+.calificacionUsuarios .avaliacao p:nth-child(3) {
+  display: none;
+}
+/* line 515, ../sass/_producto.scss */
+.calificacionUsuarios .media {
+  margin-bottom: 15px;
+}
+/* line 519, ../sass/_producto.scss */
+.calificacionUsuarios .media span {
+  font-size: 14px;
+}
+/* line 526, ../sass/_producto.scss */
+.calificacionUsuarios .rating {
+  display: inline-block;
+  width: 45%;
+  vertical-align: middle;
+}
+/* line 532, ../sass/_producto.scss */
+.calificacionUsuarios .rating li {
+  margin-bottom: 5px;
+}
+/* line 535, ../sass/_producto.scss */
+.calificacionUsuarios .rating li em, .calificacionUsuarios .rating li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 540, ../sass/_producto.scss */
+.calificacionUsuarios .rating li .voteRatingStar {
+  width: 120px;
+  height: 18px;
+}
+/* line 545, ../sass/_producto.scss */
+.calificacionUsuarios .rating li .rating-demonstrativo {
+  background-image: url("/arquivos/spritEstrellas.png");
+  width: 100%;
+  height: 18px;
+  display: block;
+  background-repeat: no-repeat;
+}
+/* line 553, ../sass/_producto.scss */
+.calificacionUsuarios .rating li .avaliacao50 {
+  background-position: -7px -66px;
+}
+/* line 557, ../sass/_producto.scss */
+.calificacionUsuarios .rating li .avaliacao40 {
+  background-position: -7px -95px;
+}
+/* line 561, ../sass/_producto.scss */
+.calificacionUsuarios .rating li .avaliacao30 {
+  background-position: -7px -123px;
+}
+/* line 565, ../sass/_producto.scss */
+.calificacionUsuarios .rating li .avaliacao20 {
+  background-position: -7px -152px;
+}
+/* line 569, ../sass/_producto.scss */
+.calificacionUsuarios .rating li .avaliacao10 {
+  background-position: -7px -182px;
+}
+/* line 575, ../sass/_producto.scss */
+.calificacionUsuarios #ulPubliqueResenha, .calificacionUsuarios #userReviewShowAllComments {
+  display: none;
+}
+/* line 579, ../sass/_producto.scss */
+.calificacionUsuarios .avalie-produto {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  vertical-align: top;
+  background-color: white;
+  padding: 30px 60px;
+}
+/* line 587, ../sass/_producto.scss */
+.calificacionUsuarios .avalie-produto #opcoes-avalie {
+  display: none;
+}
+/* line 591, ../sass/_producto.scss */
+.calificacionUsuarios .avalie-produto h5 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+/* line 597, ../sass/_producto.scss */
+.calificacionUsuarios .avalie-produto .rating-avalie-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+/* line 603, ../sass/_producto.scss */
+.calificacionUsuarios .avalie-produto .rating-avalie-wrapper .rating-avalie span {
+  width: 30px;
+  height: 30px;
+  background-image: url("/arquivos/bgCalificar.jpg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 10px;
+  overflow: hidden;
+  text-indent: -999px;
+}
+/* line 613, ../sass/_producto.scss */
+.calificacionUsuarios .avalie-produto .rating-avalie-wrapper .rating-avalie .filledRatingStar {
+  background-position: 0 -61px;
+}
+/* line 619, ../sass/_producto.scss */
+.calificacionUsuarios .voteRatingStar {
+  width: 200px;
+  display: inline-block;
+}
+/* line 623, ../sass/_producto.scss */
+.calificacionUsuarios .voteRatingStar strong {
+  width: 100%;
+}
+
+/* line 629, ../sass/_producto.scss */
+.blackbox {
+  position: absolute;
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 639, ../sass/_producto.scss */
+.blackbox .lightbox {
+  background-color: white;
+  width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+/* line 647, ../sass/_producto.scss */
+.blackbox .lightbox .cerrarLightbox {
+  width: 25px;
+  height: 25px;
+  border: solid 1px #999999;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  cursor: pointer;
+}
+/* line 657, ../sass/_producto.scss */
+.blackbox .lightbox .cerrarLightbox:before {
+  content: "x";
+  color: #999999;
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 8px;
+  font-size: 14px;
+}
+/* line 667, ../sass/_producto.scss */
+.blackbox .lightbox .cerrarLightbox:hover {
+  border-color: #666666;
+  color: #666666;
+}
+/* line 671, ../sass/_producto.scss */
+.blackbox .lightbox .cerrarLightbox:hover:before {
+  color: #666666;
+}
+/* line 681, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .tituloLightbox {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #552988;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #552988;
+  text-align: center;
+  vertical-align: top;
+}
+/* line 693, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperItemAg {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+}
+/* line 698, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperItemAg img {
+  float: left;
+}
+/* line 701, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperItemAg h3, .blackbox .lightbox .contentEleAgregado .wrapperItemAg span {
+  float: right;
+  width: 200px;
+}
+/* line 705, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperItemAg h3 {
+  font-size: 24px;
+  font-weight: 200;
+  color: #666666;
+  margin: 20px 0;
+}
+/* line 711, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperItemAg .precioProductoAg {
+  color: #ff1235;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+/* line 716, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperItemAg .precioProductoAg:before {
+  content: "MX";
+}
+/* line 719, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperItemAg .precioProductoAg:after {
+  content: "c/u";
+  margin-left: 5px;
+}
+/* line 724, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperItemAg .cantidadItemAg {
+  font-size: 14px;
+}
+/* line 729, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo {
+  padding: 20px 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-left: solid 1px #999999;
+}
+/* line 735, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo .titResumenCarrito {
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+/* line 739, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo span {
+  font-size: 14px;
+}
+/* line 742, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo .noArticulosCarrito {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 746, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo .valorArticulosCarrito {
+  color: #ff1235;
+  font-size: 16px;
+}
+/* line 750, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo .tituloBarra {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+/* line 756, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo .barraMedidora {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #999999;
+  margin-top: 10px;
+}
+/* line 764, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo .barraCantidad {
+  background-color: #552988;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+/* line 769, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo .porcentajeActual {
+  color: white;
+}
+/* line 775, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .wrapperCartInfo {
+  display: inline-block;
+  width: 30%;
+}
+/* line 780, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .seguirComprando, .blackbox .lightbox .contentEleAgregado .irAlCheckout {
+  display: inline-block;
+  vertical-align: middle;
+  width: 180px;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+/* line 792, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .seguirComprando span, .blackbox .lightbox .contentEleAgregado .irAlCheckout span {
+  color: white;
+  font-size: 16px;
+}
+/* line 797, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .seguirComprando {
+  background-color: #f58220;
+  margin-left: 210px;
+}
+/* line 801, ../sass/_producto.scss */
+.blackbox .lightbox .contentEleAgregado .irAlCheckout {
+  background-color: #ff1235;
+  margin-left: 20px;
+}
+
+/* line 810, ../sass/_producto.scss */
+.infoProductoHeader {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: solid 1px #552988;
+  z-index: 3000;
+}
+/* line 819, ../sass/_producto.scss */
+.infoProductoHeader h2, .infoProductoHeader ul, .infoProductoHeader .imagenPequena, .infoProductoHeader .presentacionPequeno, .infoProductoHeader .comprarPequeno {
+  display: inline-block;
+}
+
+/* line 1, ../sass/_checkout.scss */
+.contactoCheck {
+  float: right;
+  color: white;
+}
+/* line 5, ../sass/_checkout.scss */
+.contactoCheck li {
+  display: inline-block;
+  color: #fff;
+  margin-top: 18px;
+}
+/* line 10, ../sass/_checkout.scss */
+.contactoCheck li:first-child {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: solid 1px #fff;
+}
+
+/* line 18, ../sass/_checkout.scss */
+.colPieCheck {
+  text-align: center;
+  padding: 20px;
+  border-top: #552988;
+}
+/* line 23, ../sass/_checkout.scss */
+.colPieCheck h3, .colPieCheck ul, .colPieCheck li {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 28, ../sass/_checkout.scss */
+.colPieCheck h3 {
+  margin-right: 15px;
+}
+/* line 32, ../sass/_checkout.scss */
+.colPieCheck .mediosDePago {
+  margin-right: 20px;
+}
+/* line 36, ../sass/_checkout.scss */
+.colPieCheck .mediosDePago li {
+  height: 40px;
+  background-image: url("/arquivos/iconsMetodPayment.jpg");
+  background-repeat: no-repeat;
+  text-indent: -999px;
+  overflow: hidden;
+}
+/* line 43, ../sass/_checkout.scss */
+.colPieCheck .mediosDePago li:nth-child(1) {
+  background-position: 0 0;
+  width: 55px;
+}
+/* line 47, ../sass/_checkout.scss */
+.colPieCheck .mediosDePago li:nth-child(2) {
+  background-position: -60px 0;
+  width: 60px;
+}
+/* line 51, ../sass/_checkout.scss */
+.colPieCheck .mediosDePago li:nth-child(3) {
+  background-position: -134px 0;
+  width: 40px;
+}
+/* line 55, ../sass/_checkout.scss */
+.colPieCheck .mediosDePago li:nth-child(4) {
+  background-position: -200px 0;
+  width: 40px;
+}
+/* line 59, ../sass/_checkout.scss */
+.colPieCheck .mediosDePago li:nth-child(4) {
+  background-position: -188px 0;
+  width: 58px;
+}
+/* line 63, ../sass/_checkout.scss */
+.colPieCheck .mediosDePago li:nth-child(5) {
+  background-position: -258px 0;
+  width: 69px;
+}
+/* line 72, ../sass/_checkout.scss */
+.colPieCheck .sellosSeguridad li {
+  height: 40px;
+  background-image: url("/arquivos/iconsSecureOk.jpg");
+  background-repeat: no-repeat;
+  text-indent: -999px;
+  overflow: hidden;
+}
+/* line 79, ../sass/_checkout.scss */
+.colPieCheck .sellosSeguridad li:nth-child(1) {
+  width: 74px;
+}
+
+/* line 86, ../sass/_checkout.scss */
+h1.hide {
+  text-transform: uppercase;
+  text-align: center;
+  color: #552988;
+  font-size: 18px;
+  margin: 21px 0px;
+  border-bottom: 1px solid #552988;
+  width: 100%;
+  float: left;
+  font-weight: bold;
+}
+
+/* line 99, ../sass/_checkout.scss */
+.container-main .btn {
+  background-color: #f58220 !important;
+  border: none !important;
+  background-image: none;
+  color: #fff !important;
+}
+/* line 105, ../sass/_checkout.scss */
+.container-main .btn span {
+  color: #fff;
+}
+
+/* line 111, ../sass/_checkout.scss */
+.step, .cart, .totalizers {
+  border: 1px solid #999999 !important;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* line 118, ../sass/_checkout.scss */
+table.cart-items th {
+  color: #552988;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
